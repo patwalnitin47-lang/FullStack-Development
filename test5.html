@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Spider‑Man Villains — Sticky Images</title>
+		<style>
+			:root{--max-width:1000px;--accent:#d32;--muted:#666}
+			body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;line-height:1.5;margin:0;background:#f4f6f8;color:#111}
+			.container{max-width:var(--max-width);margin:36px auto;padding:0 20px}
+			.header{text-align:center;margin-bottom:28px}
+			h1{margin:0;font-size:1.9rem;color:var(--accent)}
+			p.lead{color:var(--muted);margin-top:6px}
+
+			/* Two-column layout for each villain: text + sticky image */
+			.section{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start;padding:18px;background:white;border-radius:10px;box-shadow:0 6px 16px rgba(15,15,20,0.04);margin-bottom:28px}
+			.content h2{margin:0 0 8px 0;font-size:1.3rem}
+			.content p{margin:0 0 12px 0;color:#333}
+
+			/* Sticky image */
+			.sticky-wrap{height:100%}
+			.sticky-img{width:100%;height:auto;border-radius:8px;display:block;position:sticky;top:20px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+
+			/* Responsive */
+			@media (max-width:900px){
+				.section{grid-template-columns:1fr;}
+				.sticky-img{position:static;margin-top:12px}
+			}
+
+			footer{text-align:center;color:var(--muted);font-size:0.9rem;padding:24px 0}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1>Spider‑Man Villains Gallery</h1>
+				<p class="lead">Scroll down — each villain image stays visible using <strong>position: sticky</strong>.</p>
+			</header>
+
+			<main>
+				<section class="section">
+					<div class="content">
+						<h2>Green Goblin</h2>
+						<p>Norman Osborn, the Green Goblin is one of Spider‑Man's most dangerous foes — genius, industrialist and menace in a deadly armor.</p>
+						<p>First appearance: The Amazing Spider‑Man #14.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/5/5b/Green_Goblin_%28Norman_Osborn%29.png" alt="Green Goblin">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Doctor Octopus</h2>
+						<p>Otto Octavius combines brilliant intellect with mechanical tentacles — a persistent, tactical threat who has led the Sinister Six.</p>
+						<p>First appearance: The Amazing Spider‑Man #3.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="images/dr_octopus.jpg" alt="Doctor Octopus">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Venom</h2>
+						<p>A symbiotic fusion of alien life and human hosts, Venom is both anti‑hero and terrifying adversary to Peter Parker.</p>
+						<p>First full appearance: The Amazing Spider‑Man #300.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/5/5f/Venom_symbiote.png" alt="Venom">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Sandman</h2>
+						<p>Flint Marko can transform his body into sand — making him extremely hard to stop and capable of massive destruction.</p>
+						<p>First appearance: The Amazing Spider‑Man #4.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/8/8b/Sandman_%28Marvel_Comics_character%29.jpg" alt="Sandman">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Rhino</h2>
+						<p>Aleksei Sytsevich wears a nearly indestructible suit and charges into battle with tremendous force.</p>
+						<p>First appearance: The Amazing Spider‑Man #41.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/8/88/Rhino_%28Marvel_Comics%29.png" alt="Rhino">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Electro</h2>
+						<p>Max Dillon gains electrical powers after an accident, becoming one of Spider‑Man's shockingly dangerous foes.</p>
+						<p>First appearance: The Amazing Spider‑Man #9.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/5/57/Electro_%28Marvel_Comics_character%29.png" alt="Electro">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Mysterio</h2>
+						<p>Quentin Beck is a master of illusion and special effects — he uses trickery and spectacle to battle Spider‑Man.</p>
+						<p>First appearance: The Amazing Spider‑Man #13.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/6/6a/Mysterio_%28Quentin_Beck%29.png" alt="Mysterio">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>The Lizard</h2>
+						<p>Dr. Curt Connors transforms into the Lizard after experimenting on himself to regrow a lost arm.</p>
+						<p>First appearance: The Amazing Spider‑Man #6.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/9/99/The_Lizard_%28Marvel_Comics_character%29.png" alt="The Lizard">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Vulture</h2>
+						<p>Adrian Toomes uses a harness that grants flight and enhanced strength — an agile and aging adversary.</p>
+						<p>First appearance: The Amazing Spider‑Man #2.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/4/44/Vulture_%28Marvel_Comics_character%29.png" alt="Vulture">
+					</aside>
+				</section>
+
+				<section class="section">
+					<div class="content">
+						<h2>Scorpion</h2>
+						<p>Mac Gargan became the Scorpion after being given a powerful mechanical tail and enhanced abilities.</p>
+						<p>First appearance: The Amazing Spider‑Man #20.</p>
+					</div>
+					<aside class="sticky-wrap">
+						<img class="sticky-img" src="https://upload.wikimedia.org/wikipedia/en/3/32/Scorpion_%28Marvel_Comics_character%29.png" alt="Scorpion">
+					</aside>
+				</section>
+			</main>
+
+			<footer>
+				Tip: Resize the browser to see how sticky images behave on narrow screens.
+			</footer>
+		</div>
+	</body>
+</html>
