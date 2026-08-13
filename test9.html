@@ -1,0 +1,49 @@
+<!-- //linear gradient health bar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; }
+        html, body { height: 100%; margin: 0; }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(1, 8, 37);
+        }
+
+        /* health bar container */
+        .health-bar {
+            width: 60%;
+            max-width: 600px;
+            height: 32px;
+            background-color: #ccc;
+            border-radius: 20px;
+            padding: 3px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(201, 71, 0, 0.848);
+        }
+
+        /* filled portion */
+        .health-fill {
+            height: 100%;
+            width: 90%; /* change this to represent current health */
+            border-radius: 16px;
+            background: linear-gradient(90deg, rgb(255, 0, 0) 20%,rgb(255, 128, 0)40%, yellow 80%, rgb(14, 250, 2) 100%);
+            transition: width 250ms ease;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="health-bar">
+        <div class="health-fill"></div>
+    </div>
+
+</body>
+</html>

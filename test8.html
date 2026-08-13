@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        *{
+
+            margin:0;
+            padding:0;
+            /* box-sizing:border-box; */
+        }
+        .slider{
+            display:inline-flex;
+            width:100vw;
+            overflow:scroll;
+            scrollbar-width:none;
+            /* height:100vh; */
+        }
+        .item{
+            height:675px;
+            position:sticky;
+            left:0px;
+            min-width: 100vw;
+            -webkit-text-stroke-width: 2px;
+            text-align: center;
+            color: white;
+            font-size: 100px;
+
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="item" style="background-color: bisque;">1</div>
+            <div class="item" style="background-color: rgb(254, 142, 5);">2</div>
+            <div class="item" style="background-color: rgb(5, 254, 5);">3</div>
+            <div class="item" style="background-color: rgb(5, 5, 254);">4</div>
+            <div class="item" style="background-color: rgb(254, 5, 254);">5</div>
+            <div class="item" style="background-color: rgb(5, 254, 254);">6</div>
+            <div class="item" style="background-color: rgb(254, 254, 5);">7</div>
+        </div>
+    </body>
+</html>
