@@ -1,36 +1,67 @@
-# FullStack-Development — CSS Demo
+# FullStack-Development
 
-This repository contains a small static CSS/HTML demo site used for experimenting with image styling and overlays.
+A collection of small, standalone HTML and CSS exercises for practising frontend fundamentals. Each page can be opened independently; there is no build step, JavaScript application, or package manager configuration in this repository.
 
-## Files
+## Exercises
 
-- `index.html` — main landing/demo page
-- `new.html` — additional examples (image stretching, overlays)
-- `dashboard.html` — dashboard example
-- `styles.css`, `dashboard.css` — project stylesheets
+| File | Concepts demonstrated |
+| --- | --- |
+| `index.html` | Login form layout, labels, inputs, focus states, buttons, and links using `styles.css` |
+| `dashboard.html` | Sidebar navigation, flexbox, responsive CSS grid cards, panels, and media queries using `dashboard.css` |
+| `new.html` | Typography, gradients, borders, image sizing, shadows, hover scaling, and Google Fonts |
+| `test4.html` | Sticky villain cards, flexbox alignment, image cropping, colors, and text shadows |
+| `test5.html` | A responsive horizontal Spider-Man villain gallery with sticky cards and background imagery |
+| `test6.html` | Full-screen horizontal scrolling, scroll snapping, overlays, fixed headings, and positioned content |
+| `test7.html` | Image-and-text villain cards, horizontal scrolling, Google Fonts, and Animate.css |
+| `test8.html` | A basic horizontal slider built with inline flexbox, sticky items, and hidden scrollbars |
+| `test9.html` | Radial and linear gradients, a health-bar example, and a circular gradient element |
+| `combinators.html` | Descendant, child, adjacent-sibling, and general-sibling CSS combinators |
+| `pseudoclass.html` | Form pseudo-classes such as `:enabled`, `:disabled`, `:required`, and `:optional` |
+| `float.html` | Floating blocks, outlines, fixed dimensions, and repeated layout patterns |
+| `newspaper.html` | Text styling including font size, weight, italics, line height, decoration, and transformation |
+| `shadow.html` | Box shadows, image drop shadows, and local image usage |
 
-## View locally
+## Stylesheets and assets
 
-Option 1 — Open directly:
-- Open `index.html` or `new.html` in your browser.
+- `styles.css` contains the login-card styles for `index.html`.
+- `dashboard.css` contains the responsive dashboard styles for `dashboard.html`.
+- `fonts/Paul-le1V.ttf` is a local font asset, with source information in `fonts/info.txt`.
+- The JPG, PNG, and WebP files in the project root provide imagery for the Spider-Man and shadow exercises.
 
-Option 2 — Serve with a simple local server (recommended):
+Most later exercises keep their CSS inside the HTML file. `new.html` also includes a link to `new.css`, but that stylesheet is not currently present; its inline styles still provide the page's main appearance.
+
+## Run locally
+
+Because these are static pages, they can be opened directly in a browser. A local server gives more consistent behavior for relative assets:
 
 ```bash
-# Python 3
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
 
-## Notes
+Then open `http://localhost:8000/` and choose an exercise file, for example:
 
-- Some pages reference Google Fonts and remote placeholder images (picsum.photos).
-- If changes don't appear, clear cache or hard-reload the page.
+```text
+http://localhost:8000/index.html
+http://localhost:8000/dashboard.html
+http://localhost:8000/test7.html
+```
 
-## Contributing
+## External resources
 
-- Edit files locally, commit, and push to the repo.
+Some pages request Google Fonts, Animate.css, or placeholder images from the internet. Those resources require a network connection. A few early Spider-Man examples also contain legacy image paths under an `images/` directory that is not present in the repository; use `test5.html`, `test6.html`, or `test7.html` for the versions that reference the included root-level images.
+
+## Development
+
+Edit an HTML or CSS file, refresh the browser, and inspect the result with the browser developer tools. Changes can be committed and pushed with:
+
+```bash
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+There are currently no automated tests or build commands.
 
 ## License
 
-Add a `LICENSE` file if you want to apply a license to this project.
+No license file is currently included. Add a `LICENSE` file before distributing the project under a specific license.
