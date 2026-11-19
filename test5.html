@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Villains</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+
+    background-image: url("spider-man-marvel-comics-comics-spider-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+        .heading{
+            font-family:honk, sans-serif;
+            font-size:90px;
+            color:white;
+            text-align:center;
+            padding:40px 0;
+            text-shadow:0 0 20px rgb(120, 0, 0);
+        }
+
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 30px;
+            padding: 30px 20px 60px;
+            scroll-snap-type: x proximity;
+        }
+
+        .gallery::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .gallery::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+        }
+
+        .card{
+            width: 100vw;
+            max-width: 1220px;
+            height: 90vh;
+            min-width: 300px;
+            flex: 0 0 auto;
+            position: sticky;
+            left: 0;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 20px 50px rgb(120, 0, 0);
+            scroll-snap-align: start;
+            
+        }
+
+        .card img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+        }
+
+        .card::before{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:linear-gradient(to top,
+            rgba(0,0,0,.8),
+            rgba(0,0,0,.1),
+            transparent);
+        }
+
+        .card h2{
+            position:absolute;
+            bottom:25px;
+            left:30px;
+
+            color:white;
+            font-size:55px;
+            font-family:'Oswald',sans-serif;
+            letter-spacing:2px;
+
+            text-shadow:0 0 15px black;
+        }
+
+        #goblin{z-index:1;}
+        #octopus{z-index:2;}
+        #venom{z-index:3;}
+        #sandman{z-index:4;}
+        #mysterio{z-index:5;}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heading">
+        Spider-Man Villains
+    </div>
+
+    <div class="gallery">
+        <div class="card" id="box1">
+            <img src="images (7).jpg" alt="Green Goblin">
+            <h2>Meet my Villains</h2>
+        </div>
+
+        <div class="card" id="goblin">
+            <img src="images (4).jpg" alt="Green Goblin">
+            <h2>Green Goblin</h2>
+        </div>
+
+        <div class="card" id="octopus">
+            <img src="images (1).jpg" alt="Doctor Octopus">
+            <h2>Doctor Octopus</h2>
+        </div>
+
+        <div class="card" id="venom">
+            <img src="images (3).jpg" alt="Venom">
+            <h2>Venom</h2>
+        </div>
+
+        <div class="card" id="sandman">
+            <img src="images (2).jpg" alt="Sandman">
+            <h2>Sandman</h2>
+        </div>
+
+        <div class="card" id="mysterio">
+            <img src="images.jpg" alt="Mysterio">
+            <h2>Mysterio</h2>
+        </div>
+    </div>
+
+</body>
+</html>

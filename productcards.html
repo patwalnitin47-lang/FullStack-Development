@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Cards</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-weight:bolder;
+        }
+
+        h1{
+            text-align:center;
+
+        }
+        h2{
+            text-align:left;
+        }
+        p{
+            text-align:left;
+        }
+
+        /* Parent container */
+        .products{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        /* Product Card */
+        .product-card{
+            width:250px;
+            border:1px solid black;
+            border-radius:10px;
+            padding:20px;
+            text-align:center;
+            box-shadow:0 14px 18px rgba(0,0,0,0.2);
+        }
+
+        .product-card img{
+            width:150px;
+            height:150px;
+        }
+
+        .product-info h2{
+            margin:10px 0;
+        }
+
+        .product-info p{
+            margin:5px 0;
+        }
+
+        .price{
+            font-weight:bold;
+        }
+
+        button{
+            margin-top:10px;
+            padding:10px 20px;
+            background-color:blue;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Product Cards</h1>
+
+<div class="products">
+
+    <div class="product-card">
+        <img src="wirelessheadphone.jpg" alt="Headphones">
+        <div class="product-info">
+            <h2>Wireless Headphones</h2>
+            <p>High-quality wireless headphones with noise cancellation.</p>
+            <p class="price">$99.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="360_F_660683718_qo0q1V2RuLO56S7cu4VMb078m10U6WW8.jpg" alt="Smart Watch">
+        <div class="product-info">
+            <h2>Smart Watch</h2>
+            <p>Stylish smartwatch with health tracking features.</p>
+            <p class="price">$149.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images (11).jpg" alt="Speaker">
+        <div class="product-info">
+            <h2>Bluetooth Speaker</h2>
+            <p>Portable Bluetooth speaker with rich sound quality.</p>
+            <p class="price">$79.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images (10).jpg" alt="Charger">
+        <div class="product-info">
+            <h2>Portable Charger</h2>
+            <p>10000mAh fast charging power bank.</p>
+            <p class="price">$39.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="Nikon-D7500-DSLR-Camera-with-18-140mm-Lens-Online-Buy-India_01.jpg" alt="DSLR Camera">
+        <div class="product-info">
+            <h2>DSLR</h2>
+            <p>High-quality digital single-lens reflex camera.</p>
+            <p class="price">$399.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="61vX82k9jiL.jpg" alt="Charger">
+        <div class="product-info">
+            <h2>Smart Phone</h2>
+            <p>Latest model with advanced features and excellent camera quality.</p>
+            <p class="price">$399.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images (12).jpg" alt="Charger">
+        <div class="product-info">
+            <h2>Laptop</h2>
+            <p>High-performance laptop for work and entertainment.</p>
+            <p class="price">$499.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="images (13).jpg" alt="Charger">
+        <div class="product-info">
+            <h2>Tablet</h2>
+            <p>10000mAh fast charging power bank.</p>
+            <p class="price">$439.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

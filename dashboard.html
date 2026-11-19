@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Layout</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li class="active"><span class="menu-icon">📊</span>Dashboard</li>
+          <li><span class="menu-icon">👤</span>Users</li>
+          <li><span class="menu-icon">📦</span>Products</li>
+          <li><span class="menu-icon">🛒</span>Orders</li>
+          <li><span class="menu-icon">⚙️</span>Settings</li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <h1>Dashboard Overview</h1>
+            <p>All key metrics and activity at a glance</p>
+          </div>
+          <button>New Report</button>
+        </header>
+
+        <section class="cards">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-logo">💰</div>
+              <div>
+                <p>Revenue</p>
+                <strong>$24K</strong>
+              </div>
+            </div>
+            <span class="card-meta">+12% this month</span>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-logo">👥</div>
+              <div>
+                <p>Users</p>
+                <strong>1.2K</strong>
+              </div>
+            </div>
+            <span class="card-meta">New users: 280</span>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-logo">🛍️</div>
+              <div>
+                <p>Products</p>
+                <strong>86</strong>
+              </div>
+            </div>
+            <span class="card-meta">12 low stock</span>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-logo">📦</div>
+              <div>
+                <p>Orders</p>
+                <strong>320</strong>
+              </div>
+            </div>
+            <span class="card-meta">24 new today</span>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>Recent Activity</h3>
+          <p>New signups increased by 15% this week, and order volume is up 8% compared to last week. Product availability remains stable with a few items flagged for restock.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
